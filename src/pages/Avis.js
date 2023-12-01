@@ -1,73 +1,48 @@
 import { useEffect, useState } from 'react';
+import Modal from '../components/modal';
+
 
 function Avis() {
 
-   // creation et gestion de modal //
+    const [isOpen, setIsOpen] = useState(false);
+    const handleClose = (() => {
+        setIsOpen(false);
+    });
 
-let modal = null
+    const handleClick = (() => {
+        setIsOpen(true);
+    });
 
-// ouverture de la modal //
-
-const ouvrirModal = function (e) {
-    e.preventDefault()
-    const target = document.querySelector(e.target.getAttribute('href'))
-    target.style.display = null
-    target.setAttribute("aria-hidden", "false")
-    target.setAttribute("aria-modal", "true")
-    modal = target
-    modal.addEventListener("click", closeModal)
-    modal.querySelector(".js-modal-close").addEventListener("click", closeModal)
-    modal.querySelector(".js-modal-stop").addEventListener("click", stopPropagation)
-};
-
-// fermeture de la modal //
-
-const closeModal = function (e) {
-    e.preventDefault()
-    if (modal === null) return
-    modal.style.display = "none"
-    modal.setAttribute("aria-hidden", "true")
-    modal.setAttribute("aria-modal", "false")
-    modal.removeEventListener("click", closeModal)
-    modal.querySelector(".js-modal-close").removeEventListener("click", closeModal)
-    modal.querySelector(".js-modal-stop").removeEventListener("click", stopPropagation)
-    modal = null
-}
-
-const stopPropagation = function (e) {
-    e.stopPropagation()
-};
-
-
-document.querySelectorAll(".js-modal").forEach(a => {
-    a.addEventListener("click", ouvrirModal)
-});
-   
     const [avis, setAvis] = useState([])
- 
-    const message = document.getElementById("message")
 
-    const postAvis = useEffect(() => {
+    const message = document.getElementById("#message")
+
+    const postAvis = useEffect((event) => {
+
         fetch("", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(message)
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(message)
+        })
+            .then((response) => {
+                console.log(response);
+            })
+            .catch((error) => console.log(error))
     })
-    })
-    
-  
+
+
     useEffect(() => {
-      fetch("")
-  
-      .then((response) => response.json())
-      .then((data) => {
-        setAvis(data)
-      })
-      .catch((error) => console.log(error))
+        fetch("")
+
+            .then((response) => response.json())
+            .then((data) => {
+                setAvis(data)
+            })
+            .catch((error) => console.log(error))
     })
-  
+
     return (
         <div>
             {avis.map((avis, id) =>
@@ -75,21 +50,22 @@ document.querySelectorAll(".js-modal").forEach(a => {
                     <p>{avis}</p>
                 </div>
             )}
+
+            <Modal
+                isOpen={isOpen}
+                handleClose={handleClose}
+            >
+                <form action="#" method="post" >
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Envoyer" onClick={postAvis} />
+                </form>
+            </Modal>
             <p>Donnez moi votre avis !</p>
-            <a href="#modal1" class="js-modal"><button>Ecrire un avis</button></a>
-            <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-modal="false" style={{display:"none"}}>
-                <div class="wrapper js-modal-stop">
-                        <span class="js-modal-close">X</span>
-                        <form action="#" method="post">
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-			            <input onClick={postAvis} type="submit" value="Envoyer"/>
-                        </form>
-                </div>
-            </aside>
+            <button onClick={handleClick}>Ecrire un avis</button>
         </div>
     )
-    
-}            
+
+}
 
 export default Avis
              
