@@ -17,7 +17,7 @@ function Avis() {
 
     const message = document.getElementById("#message")
 
-    const postAvis = useEffect((event) => {
+    const postAvis = useEffect(() => {
 
         fetch("", {
             method: "POST",
