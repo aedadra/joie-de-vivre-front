@@ -1,14 +1,27 @@
 [
     {
         "id": 1,
-        "title": ,
-        "image": ,
-        "text": ,
+        "image": "./images/carrousel_home/PhotoFichier_46.png",
+        "text": "offre de lancement",
+        "ornement1": "./images/carrousel_home/ornement_4.png",
+        "title": "POUR LES PARTICULIERS...",
+        "description": "offre de lancement exceptionnelle sur toutes les prestations.",
+        "description2":"Une envie de changement, allant d’un simple réaménagement d’une pièce à la rénovation de votre maison ?",
+        "description3":"Laissez-vous tenter !",
+        "promotion": "./images/carrousel_home/carrousel_reduction.png",
+        "ornement2": "./images/carrousel_home/ornement_8.png"
     },
     {
         "id": 2,
-        "title": ,
-        "image": ,
-        "text": ,
+        "image": "./images/carrousel_home/PhotosFichier_34.png",
+        "text": "offre de lancement",
+        "ornement1": "./images/carrousel_home/ornement_4.png",
+        "title": "POUR LES PROFESSIONNELS...",
+        "description": "Offre de lancement exceptionnelle sur toutes les prestations.", 
+        "description2": "Envie d’améliorer la circulation de votre boutique, rénover votre restaurant ou bureau ?",
+        "description3": "Laissez-vous tenter !",
+        "promotion": "./images/carrousel_home/carrousel_reduction.png",
+        "ornement2": "./images/carrousel_home/ornement_8.png"
     }
+   
 ]

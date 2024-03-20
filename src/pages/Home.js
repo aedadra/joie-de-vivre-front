@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import Carrousel from "../components/carrousel"
 import picture1 from "../images/inspiration/PhotosFichier_36.png"
 import picture2 from "../images/inspiration/PhotosFichier_37.png"
 import picture3 from "../images/inspiration/PhotosFichier_38.png"
 import picture4 from "../images/inspiration/PhotosFichier_39.png"
+import Carrousel from "../components/carrousel";
 
 
 function Home () {
@@ -12,8 +12,11 @@ function Home () {
     return (
         <div>
         <div>
-            <h1>Ensemble, donnons vie à nos espaces</h1>
+            <h1>"Ensemble, donnons vie à nos espaces"</h1>
             <Carrousel />
+
+
+                    
         </div>
         <div>
         À la recherche d'un architecte d'intérieur à Quimper ? 

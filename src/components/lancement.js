@@ -1,19 +1,20 @@
-import homeImage from "../images/carrousel_home/carrousel_home_1.jpg"
 
-
-function Lancement () {
+function Lancement ({image, text, ornement1, title, description, description2, description3, promotion, ornement2}) {
     
+
     return (
-        <div>
-            <img src={homeImage} alt="appartement" />
-            <p>Pour les particuliers</p>
-            <p>offre de lancement exceptionnelle sur toutes les prestations.</p>
-            <p>Une envie de changement, allant d’un simple réaménagement d’une pièce à la rénovation de votre maison ?</p>
-            <p>Laissez-vous tenter !</p>
-
-        </div>
-    )
-
+        <article>
+            <img src={image} alt=" " />  
+            <p>{text}</p>
+            <img src={ornement1} alt="ornement de texte" />
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <p>{description2}</p>
+            <p>{description3}</p>
+            <img src={promotion} alt="promption en cours" />
+            <img src={ornement2} alt="ornement de texte" />
+        </article>
+    );
 
 }
 

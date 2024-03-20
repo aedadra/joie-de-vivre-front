@@ -22,7 +22,6 @@ function Prestations() {
                 {prestation.map((prestation, id) =>
                     <div key={id}>
                         <Card id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} />
-
                     </div>
                 )}
             </div>

@@ -8,7 +8,7 @@ function Header() {
         <div class="nav">
             <img src={banniere} alt="banniere" />
             <div class="nav_bar">
-                <NavLink to="./Home">ACCUEIL</NavLink>
+                <NavLink to="./">ACCUEIL</NavLink>
                 <NavLink to="./Propos">A PROPOS</NavLink>
                 <NavLink to="./Prestations">PRÉSTATIONS</NavLink>
                 <NavLink to="./Projets">RÉALISATIONS</NavLink>
