@@ -1,8 +1,10 @@
 import { useState } from "react";
+import vectorLeft from "../images/carrousel_home/vectorLeft.png"
+import vectorRight from "../images/carrousel_home/vectorRight.png"
 
-function Carrousel({ carrousel }) {
+function Carrousel({  }) {
 	const [image, setImage] = useState(0)
-	const boucle = carrousel.length
+	const boucle = image.length
 	const nextImage = () => {
 		setImage(image === boucle - 1 ? 0 : image + 1)
 	};
@@ -15,32 +17,15 @@ function Carrousel({ carrousel }) {
 			<div>
 				<div >
 					{boucle > 1 && (
-						<img src={""} alt="fleche vers la gauche" onClick={previousImage} />
+						<img src={vectorLeft} alt="fleche vers la gauche" onClick={previousImage} />
 					)}
 
 					{boucle > 1 && (
-						<img src={""} alt="fleche vers la droite" onClick={nextImage} />
+						<img src={vectorRight} alt="fleche vers la droite" onClick={nextImage} />
 					)}
 				</div>
 			</div>
-			{carrousel.map((carrousel, index) => {
-				return (
-					<div key={index}>
-						<div className="carrousel__image" >
-							{index === image && (
-								<img src={carrousel} alt="img-project" />
-							)}
-						</div>
-						<div className="carrousel__index">
-							{index === image && boucle > 1 && (
-								<span>
-									{image + 1}/{boucle}
-								</span>
-							)}
-						</div>
-					</div>
-				);
-			})}
+			
 		</figcaption>
 	);
 }

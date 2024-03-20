@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Modal from '../components/modal';
+import "../styles/avis.css"
 
 
 function Avis() {
@@ -44,27 +45,36 @@ function Avis() {
     })
 
     return (
-        <div>
-            {avis.map((avis, id) =>
-                <div key={id}>
-                    <p>{avis}</p>
-                </div>
-            )}
 
-            <Modal
-                isOpen={isOpen}
-                handleClose={handleClose}
-            >
-                <form action="#" method="post" >
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Envoyer" onClick={postAvis} />
-                </form>
-            </Modal>
-            <p>Donnez moi votre avis !</p>
-            <button onClick={handleClick}>Ecrire un avis</button>
+        <div class="avis">
+            <div class="avis_post">
+                <Modal
+                    isOpen={isOpen}
+                    handleClose={handleClose}
+                >
+                    <form action="#" method="post" class="avis_form">
+                        <label for="name">votre nom</label>
+                        <input type='text' value=""/>
+                        <label for="firstName">votre prénom</label>
+                        <input type='text' value=""/>
+                        <label for="avis">votre avis</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Envoyer" onClick={postAvis} />
+                    </form>
+                </Modal>
+                <p>Donnez moi votre avis !</p>
+                <button onClick={handleClick}>Ecrire un avis</button>
+            </div>
+            <div class="avis_get">
+                <p>D'autres l'ont déjà fait !</p>
+                {avis.map((avis, id) =>
+                    <div key={id}>
+                        <p>{avis}</p>
+                    </div>
+                )}
+            </div>
         </div>
     )
-
 }
 
 export default Avis

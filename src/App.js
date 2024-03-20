@@ -8,18 +8,20 @@ import Projets from './pages/Projets';
 import Login from './pages/Connexion';
 import Propos from './pages/Propos';
 import SignUp from './pages/Creation';
+import Inspirations from './pages/Inspirations';
 
 function App() {
   return (
     <>
       <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Avis" element={<Avis />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Propos" element={<Propos />} />
           <Route path="/Prestations" element= {<Prestations />} />
           <Route path="/Projets" element={<Projets/>} />
-          <Route path="/Propos" element={<Propos />} />
+          <Route path='/Inspirations' element={<Inspirations />} />
+          <Route path="/Avis" element={<Avis />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Connexion" element={<Login />} />
           <Route path="/Creation" element={<SignUp />} />
         </Routes>

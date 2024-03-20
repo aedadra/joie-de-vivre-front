@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import "../styles/signUp.css"
 
 function SignUp() {
 
@@ -14,8 +15,8 @@ function SignUp() {
     })
 
     return (
-        <div>
-            <form id="connect">
+        <div class="signUp">
+            <form id="connect" class="signUp_form">
                 <label for="email">Choisissez votre E-mail</label>
                 <input type="email" id="email" required />
                 <label for="password">Choisissez votre Mot de Passe</label>

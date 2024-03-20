@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { useEffect } from "react"
+import "../styles/login.css"
 
 function Login() {
 
@@ -15,9 +16,9 @@ function Login() {
     })
 
     return (
-        <div>
+        <div class="login">
             <h2>Login</h2>
-            <form id="connect">
+            <form id="connect" class="login_form">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" required />
                 <label for="password">Mot de Passe</label>

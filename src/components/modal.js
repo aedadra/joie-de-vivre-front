@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "../styles/modal.css"
 function Modal({ children, isOpen, handleClose }) {
     // 👇 L'usage de cet ref va particulièrement nous intéresser 
     const dialogRef = useRef(null);
@@ -21,6 +22,7 @@ function Modal({ children, isOpen, handleClose }) {
             ref={dialogRef}
             // 👇 capture l'élément 'close' et mise à jour de l'état du composant
             onClose={handleClose}
+            class="modal"
         >
             {children}
 
@@ -29,6 +31,7 @@ function Modal({ children, isOpen, handleClose }) {
                 onClick={close}
                 title="close modal"
                 aria-label="close modal"
+                class="modal_button"
             >
                 fermer
             </button>
