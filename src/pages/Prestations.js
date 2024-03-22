@@ -1,5 +1,6 @@
 import Card from '../components/card';
 import { useEffect, useState } from 'react';
+import"../styles/prestation.scss"
 
 function Prestations() {
 
@@ -16,11 +17,11 @@ function Prestations() {
     })
 
     return (
-        <div>
+        <div class="prestation">
             <h2>LES PARTICULIERS</h2>
-            <div>
+            <div class="prestation_align">
                 {prestation.map((prestation, id) =>
-                    <div key={id}>
+                    <div key={id} class="prestation_card">
                         <Card id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} />
                     </div>
                 )}

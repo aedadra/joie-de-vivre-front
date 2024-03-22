@@ -1,0 +1,14 @@
+.prestation {
+
+    &_align {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+    }
+
+    &_card {
+        width: 25%;
+
+    }
+}

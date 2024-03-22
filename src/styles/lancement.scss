@@ -1,0 +1,73 @@
+.lancement {
+    width: 100%;
+    display: flex;
+    &_img {
+        color: white;
+        font-weight: 700;
+        width:35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &_title{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &_description{
+        width: 81%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &_promotion {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_promotion img {
+        height: 80%;
+        object-fit: contain;
+    }
+    &_align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_ornement {
+        width: 5%;
+        object-fit: contain;
+        align-self: flex-end;
+    }
+    &_button {
+        color: #edb964;
+        border: solid 2px #edb964;
+        background-color: white;
+    }
+}
+.lancement_title img {
+    rotate: 180deg;
+    width: 9%;
+    object-fit: cover;
+    height: 100%
+}
+
+.lancement_img img {
+    width:100%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.lancement_img p {
+    top: 2.8em;
+    left: 2em;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}

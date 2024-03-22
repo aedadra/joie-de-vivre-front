@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "./images/carrousel_home/PhotoFichier_46.png",
+        "image": "./images/carrousel_home/ImageFichier_64.png",
         "text": "offre de lancement",
         "ornement1": "./images/carrousel_home/ornement_4.png",
         "title": "POUR LES PARTICULIERS...",
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "image": "./images/carrousel_home/PhotosFichier_34.png",
+        "image": "./images/carrousel_home/ImageFichier_73.png",
         "text": "offre de lancement",
         "ornement1": "./images/carrousel_home/ornement_4.png",
         "title": "POUR LES PROFESSIONNELS...",

@@ -1,18 +1,30 @@
+import "../styles/lancement.scss"
 
 function Lancement ({image, text, ornement1, title, description, description2, description3, promotion, ornement2}) {
     
 
     return (
-        <article>
-            <img src={image} alt=" " />  
-            <p>{text}</p>
-            <img src={ornement1} alt="ornement de texte" />
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <p>{description2}</p>
-            <p>{description3}</p>
-            <img src={promotion} alt="promption en cours" />
-            <img src={ornement2} alt="ornement de texte" />
+        <article class="lancement">
+            <div class="lancement_img">
+                <img src={image} alt=" " />
+                <p>{text}</p>
+            </div>
+            <div class="lancement_align">
+                <div class="lancement_title">
+                    <img src={ornement1} alt="ornement de texte" />
+                    <h2>{title}</h2>
+                </div>
+                <div class="lancement_promotion">
+                    <div class="lancement_description">
+                        <p>{description}</p>
+                        <p>{description2}</p>
+                        <p>{description3}</p>
+                    </div>
+                    <img src={promotion} alt="promption en cours" />
+                </div>
+                <button class="lancement_button">En savoir plus</button>
+            </div>
+            <img src={ornement2} class="lancement_ornement" alt="ornement de texte" />
         </article>
     );
 
