@@ -9,20 +9,25 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        font-family: Tsukimi ;
     }
     &_title{
         display: flex;
         justify-content: center;
         width: 100%;
         margin-bottom: 20px;
+        font-family: Amatic SC;
+        font-weight: 600;
+        font-size: 1.5em;
     }
     &_description{
         width: 81%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        padding-right: 8px;
+        font-family:'Tsukimi rounded';
+        font-size: 1.2em;
     }
     &_promotion {
         height: 200px;
@@ -49,6 +54,10 @@
         color: #edb964;
         border: solid 2px #edb964;
         background-color: white;
+        font-family: cookie;
+        font-size: 2em;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 .lancement_title img {
@@ -65,7 +74,7 @@
 }
 
 .lancement_img p {
-    top: 2.8em;
+    top: 3em;
     left: 2em;
     position: absolute;
     writing-mode: vertical-rl;

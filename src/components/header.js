@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../styles/header.css"
+import "../styles/header.scss"
 import banniere from "../images/banniere.png"
 
 function Header() {

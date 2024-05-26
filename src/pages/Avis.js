@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Modal from '../components/modal';
-import "../styles/avis.css"
+import "../styles/avis.scss"
 
 
 function Avis() {

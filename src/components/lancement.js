@@ -22,7 +22,7 @@ function Lancement ({image, text, ornement1, title, description, description2, d
                     </div>
                     <img src={promotion} alt="promption en cours" />
                 </div>
-                <button class="lancement_button">En savoir plus</button>
+                <button class="lancement_button">En savoir plus...</button>
             </div>
             <img src={ornement2} class="lancement_ornement" alt="ornement de texte" />
         </article>

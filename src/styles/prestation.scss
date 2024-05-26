@@ -1,14 +1,68 @@
 .prestation {
-
+    width: 100%;
+    &_tache-container {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &_tache {
+        position: absolute;
+        width: 25%;
+        object-fit: cover;
+    }
+    &_title {
+        text-align: center;
+        font-family:  Amatic SC;
+        font-size: 3em;
+        margin-bottom: 70px;
+        margin-right: 140px;
+    }
     &_align {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 30px;
         width: 100%;
+        margin-left: 40px;
     }
-
+    &_align-margin{ 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 200px;
+    }
     &_card {
-        width: 25%;
-
+        width: 24%;
+        position: relative;
     }
+    &_option-align {
+        display: flex;
+    }
+    &_tache2-container {
+        position: relative;
+        width: 30%;
+    }
+    &_tache2 {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        margin-top: -400px;
+        z-index: -1;
+    }
+    &_option {
+        width: 65%;
+        margin-top: 100px;
+    }
+    &_option-title {
+        font-family: Amatic SC;
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 70px;
+    }
+    &_option-text {
+        font-family: 'Tsukimi rounded';
+        font-size: 1.2em;
+    }
+
 }

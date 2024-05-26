@@ -1,0 +1,23 @@
+[
+    {
+        "id":4,
+        "title": "Pour vos pièces de 30m² à 60m²...",
+        "image": "./images/presta_particulier/ImageFichier_68.png",
+        "promoImage": "./images/promo/PastilleFichier_62.png",
+        "price":"45€ TTC/m²"
+    },
+    {
+        "id":5,
+        "title": "Des plantes dans votre interieur...",
+        "image": "./images/presta_particulier/ImageFichier_67.png",
+        "promoImage": "./images/promo/PastilleFichier_63.png",
+        "price": "Sur devis"
+    },
+    {
+        "id":6,
+        "title": "Espace personalisé pour votre boule de poils...",
+        "image": "./images/presta_particulier/ImageFichier_69.png",
+        "promoImage": "./images/promo/PastilleFichier_63.png",
+        "price": "Sur devis"
+    }
+]

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "../styles/modal.css"
+import "../styles/modal.scss"
 function Modal({ children, isOpen, handleClose }) {
     // 👇 L'usage de cet ref va particulièrement nous intéresser 
     const dialogRef = useRef(null);

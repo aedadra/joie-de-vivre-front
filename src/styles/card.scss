@@ -8,10 +8,10 @@
     border: solid 2px grey;
     margin-left: 30px;
 
+
     &_title {
         text-align: center;
     }
-
     &_photos {
         display: flex;
         position: relative;
@@ -28,18 +28,14 @@
         z-index: 2;
         position: absolute;
     }
-
     &_cover {
         width: 80%;
         object-fit: contain;
         z-index: 1;
     }
-
     &_price {
         text-align: center;
-
     }
-
     &_button {
         color: #edb964;
         border: solid 2px #edb964;

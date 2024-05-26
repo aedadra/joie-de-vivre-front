@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import "../styles/signUp.css"
+import "../styles/signUp.scss"
 
 function SignUp() {
 

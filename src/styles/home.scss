@@ -1,0 +1,107 @@
+.home {
+    &_title {
+        text-align: center;
+        font-size: 3em;
+        color: #edb964;
+        font-family: Tsukimi Rounded;
+    }
+    &_carrousel {
+        margin-left: -290px;
+    }
+    &_tache {
+        width: 100%;
+        height: 100%;   
+    }
+    &_alignTache {
+        display: flex;
+        flex-direction: column;
+    }
+    &_tache-container{
+        width: 50%;
+        height: 700px;
+        margin-top: 300px; 
+        margin-right: 20px;
+    }
+    &_text h2{
+        font-family: Amatic SC;
+        text-align: center;
+        font-size: 3em;
+    }
+    &_text {
+        text-align: end;
+        font-family: 'Tsukimi rounded';
+        font-size: 1.2em;
+        margin-right: 20px;
+    }
+    &_text h3 {
+        font-family: 'Tsukimi Rounded';
+    }
+    &_tache2{
+        position: relative;
+        object-fit: fill;
+        width: 30%;
+        margin-top: -200px;
+    }
+    
+    &_button-link {
+        text-align: center;
+    }
+    &_button-contact {
+        color: #edb964;
+        background-color: white;
+        border: solid #edb964;
+        font-family: Cookie;
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+    &_pictures-align{
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    &_pictures h2 {
+        font-family: Amatic SC;
+        font-size: 3em;
+        text-align: center;
+    }
+    &_pictures-column1 {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &_pictures-column2 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &_picture1 {
+        width: 20%; 
+    }
+    &_picture2 {
+        width: 100%;
+        object-fit: contain;
+    }
+    &_picture3 {
+        width: 100%;
+        object-fit: contain;
+    }
+    &_button {
+        width: 100%;
+        text-align: center;
+        font-family: Cookie;
+        font-size: 3.2em;
+        color: white;
+        border: none;
+        height: 100%;
+        background-color: #cbccc6;
+    }
+    &_button-container {
+        height: 100%;
+        width: 65%;
+    }
+}
+.tache {
+    display: flex;
+}

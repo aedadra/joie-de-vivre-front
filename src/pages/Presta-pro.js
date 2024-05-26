@@ -5,13 +5,14 @@ import tache2 from "../images/ornement/tâcheFichier_54.png"
 import tache from "../images/ornement/tâcheFichier_53.png"
 import Card2 from '../components/card-2';
 
-function Prestations() {
+
+function PrestationsPro() {
 
     const [prestation, setPrestation] = useState([])
     const [prestation2, setPrestation2] = useState([])
 
     useEffect(() => {
-        fetch("/card.json")
+        fetch("/card-pro.json")
 
             .then((response) => response.json())
             .then((data) => {
@@ -22,7 +23,7 @@ function Prestations() {
     
 
     useEffect(() => {
-        fetch("/card-2.json")
+        fetch("/card-pro-2.json")
 
             .then((response) => response.json())
             .then((data) => {
@@ -58,11 +59,11 @@ function Prestations() {
                 <div class="prestation_option">
                     <h2 class="prestation_option-title">QUELQUES OPTIONS...</h2>
                     <ul class="prestation_option-text">
-                        <li>Visite 3D de votre projet ................................................................................................... à partir de 400€</li>
+                        <li>Visite 3D de votre projet ................................................................................................... à partir de 300€</li>
                         <br></br>
-                        <li>Design de meubles sur-mesure (bureau, bibliothèque, meuble TV,...) ......................... à partir de 150€</li>
+                        <li>Design de meubles sur-mesure (bureau, bibliothèque,...) ......................... à partir de 100€</li>
                         <br></br>
-                        <li>Shopping liste avec accompagnement dans les achats .................................................... à partir de 200€</li>
+                        <li>Shopping liste avec accompagnement dans les achats .................................................... à partir de 250€</li>
                         <br></br>
                         <li>Proposition d’artisans pour la réalisation des travaux ..................................................... 100€</li>
                         <br></br>
@@ -77,4 +78,4 @@ function Prestations() {
     );
 }
 
-export default Prestations;
+export default PrestationsPro;

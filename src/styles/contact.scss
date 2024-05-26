@@ -1,0 +1,79 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    & h2 {
+        margin-top: 70px;
+        text-align: center;
+        font-size: 3em;
+        font-family: Amatic SC;
+    }
+    &_table {
+        border-collapse: collapse;
+        width: 80%;
+        font-family: 'Tsukimi rounded';
+        margin-left: 40px;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    &_horaires {
+        display: flex;
+        width: 100%;
+    }
+    &_tache3 {
+        width: 25%;
+        right: 0;
+        position: absolute;
+        object-fit: contain;
+    }
+    &_horaires-title {
+        margin-right: 200px;
+    }
+    &_zone {
+        display: flex;
+        height: 550px;
+        align-items: center;
+    }
+    &_zone-title {
+        margin-left: 200px;
+    }
+    &_tache {
+        width: 15%;
+        height: 400px;
+    }
+    &_map {
+        margin-left: 5%;
+        width: 45%;
+    }
+    &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        font-family: 'Tsukimi rounded';
+        font-size: 1.2em;
+    }
+    &_text h3 {
+        color: #edb964;
+        font-family: Cookie;
+        font-size: 3em;
+        font-weight: 500;
+        margin-block-end: 0;
+    }
+    &_tache2 {
+        width: 35%;
+        object-fit: contain;
+    }
+}
+
+td {
+    border-left: 2px solid
+}
+.table_border {
+    border-bottom: 2px solid
+}
+input, textarea {
+    width: 70%;
+}
