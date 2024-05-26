@@ -37,7 +37,7 @@ function PrestationsPro() {
             <div class="prestation_tache-container">
                 <img src={tache} alt='tache avec une fleur' class="prestation_tache" />
             </div>
-            <h2 class="prestation_title">LES PARTICULIERS</h2>
+            <h2 class="prestation_title">LES PROFESSIONNELS</h2>
             <div class="prestation_align">
                 {prestation.map((prestation, id) =>
                     <div key={id} class="prestation_card">
