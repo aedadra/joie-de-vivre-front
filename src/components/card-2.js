@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "../styles/card.scss"
 
+
 function Card2({ id, image, title, promoImage, price }) {
+	
 	return (
-		<article class="card">
+		<article class="card" key={id}>
 			<p class="card_title">{title}</p>
 			<div class="card_photos">
 				<img src={promoImage} alt='promotion de lancement' class="card_promo" />
@@ -15,8 +17,8 @@ function Card2({ id, image, title, promoImage, price }) {
 				<p>L'ETUDE DU PROJET</p>
 				{price}
 			</div>
-			<Link to={`./PrestationId/${id}`}>
-				<button class="card_button">En savoir plus</button>
+			<Link to={`/PrestationId/${id}`}>
+				<button class="card_button" >En savoir plus</button>
 			</Link>
 		</article>
 	);

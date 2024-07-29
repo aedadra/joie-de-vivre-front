@@ -37,7 +37,7 @@ function Carrousel() {
 						{lancement.map((lancement, index) =>
 							<div key={index}>
 								{index === image && (
-									<Lancement image={lancement.image} text={lancement.text} ornement1={lancement.ornement1} title={lancement.title} description={lancement.description} description2={lancement.description2} description3={lancement.description3} promotion={lancement.promotion} ornement2={lancement.ornement2} />
+									<Lancement image={lancement.image} text={lancement.text} ornement1={lancement.ornement1} title={lancement.title} description={lancement.description} description2={lancement.description2} description3={lancement.description3} promotion={lancement.promotion} ornement2={lancement.ornement2} link={lancement.link} element={lancement.element}/>
 								)}
 							</div>
 						)}

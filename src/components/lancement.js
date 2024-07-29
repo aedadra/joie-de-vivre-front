@@ -1,6 +1,7 @@
+import { Link, NavLink } from "react-router-dom";
 import "../styles/lancement.scss"
 
-function Lancement ({image, text, ornement1, title, description, description2, description3, promotion, ornement2}) {
+function Lancement ({image, text, ornement1, title, description, description2, description3, promotion, ornement2, link, element}) {
     
 
     return (
@@ -22,7 +23,11 @@ function Lancement ({image, text, ornement1, title, description, description2, d
                     </div>
                     <img src={promotion} alt="promption en cours" />
                 </div>
-                <button class="lancement_button">En savoir plus...</button>
+                <button class="lancement_button">
+                    <NavLink to={link} element={element}>
+                    En savoir plus...
+                    </NavLink>
+                    </button>
             </div>
             <img src={ornement2} class="lancement_ornement" alt="ornement de texte" />
         </article>

@@ -21,7 +21,6 @@ function PrestationsPro() {
             .catch((error) => console.log(error))
     })
     
-
     useEffect(() => {
         fetch("/card-pro-2.json")
 

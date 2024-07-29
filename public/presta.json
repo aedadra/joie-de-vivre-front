@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "title": "Rénovation/ aménagement de votre appartment...",
+        "image": "./images/presta_particulier/ImageFichier_64.png",
+        "promoImage": "./images/promo/PastilleFichier_61.png",
+        "price": "300€ TTC/m²"
+    },
+    {
+        "id":2,
+        "title": "Rénovation/ aménagement de votre maison...",
+        "image":"./images/presta_particulier/ImageFichier_65.png",
+        "promoImage": "./images/promo/PastilleFichier_61.png",
+        "price": "200€ TTC/m²"
+    },
+    {
+        "id":3,
+        "title": "Pour vos pièces inferieurs à 30m²...",
+        "image":"./images/presta_particulier/ImageFichier_66.png",
+        "promoImage": "./images/promo/PastilleFichier_62.png",
+        "price": "65€ TTC/m²"
+    },
+    {
+        "id":4,
+        "title": "Pour vos pièces de 30m² à 60m²...",
+        "image": "./images/presta_particulier/ImageFichier_68.png",
+        "promoImage": "./images/promo/PastilleFichier_62.png",
+        "price":"45€ TTC/m²"
+    },
+    {
+        "id":5,
+        "title": "Des plantes dans votre interieur...",
+        "image": "./images/presta_particulier/ImageFichier_67.png",
+        "promoImage": "./images/promo/PastilleFichier_63.png",
+        "price": "Sur devis"
+    },
+    {
+        "id":6,
+        "title": "Espace personalisé pour votre boule de poils...",
+        "image": "./images/presta_particulier/ImageFichier_69.png",
+        "promoImage": "./images/promo/PastilleFichier_63.png",
+        "price": "Sur devis"
+    },
+    {
+        "id":7,
+        "title": "Rénovation/aménagement de votre boutique...",
+        "image": "./images/presta_pro/ImageFichier_80.png",
+        "promoImage": "./images/promo/PastilleFichier_61.png",
+        "price":"150€ HT/m2"
+    },
+    {
+        "id":8,
+        "title": "Rénovation/aménagement de votre restaurant...",
+        "image": "./images/presta_pro/ImageFichier_81.png",
+        "promoImage": "./images/promo/PastilleFichier_61.png",
+        "price": "200€ HT/m2"
+    },
+    {
+        "id":9,
+        "title": "Rénovation/aménagement de vos bureaux...",
+        "image": "./images/presta_pro/ImageFichier_82.png",
+        "promoImage": "./images/promo/PastilleFichier_62.png",
+        "price": "100€ HT/m2"
+    },
+    {
+        "id":10,
+        "title": "Aménagement spécifique des élevages...",
+        "image": "./images/presta_pro/ImageFichier_83.png",
+        "promoImage": "./images/promo/PastilleFichier_62.png",
+        "price":"Sur devis"
+    },
+    {
+        "id":11,
+        "title": "Des plantes dans vos bureaux...",
+        "image": "./images/presta_pro/ImageFichier_84.png",
+        "promoImage": "./images/promo/PastilleFichier_63.png",
+        "price": "Sur devis"
+    },
+    {
+        "id":12,
+        "title": "Proposition de projet pour la vente de biens immo...",
+        "image": "./images/presta_pro/ImageFichier_85.png",
+        "promoImage": "./images/promo/PastilleFichier_63.png",
+        "price": "Sur devis"
+    }
+]

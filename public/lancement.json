@@ -9,7 +9,10 @@
         "description2":"Une envie de changement, allant d’un simple réaménagement d’une pièce à la rénovation de votre maison ?",
         "description3":"Laissez-vous tenter !",
         "promotion": "./images/carrousel_home/carrousel_reduction.png",
-        "ornement2": "./images/carrousel_home/ornement_8.png"
+        "ornement2": "./images/carrousel_home/ornement_8.png",
+        "link": "./Prestations",
+        "element": "<Prestations />"
+
     },
     {
         "id": 2,
@@ -21,7 +24,9 @@
         "description2": "Envie d’améliorer la circulation de votre boutique, rénover votre restaurant ou bureau ?",
         "description3": "Laissez-vous tenter !",
         "promotion": "./images/carrousel_home/carrousel_reduction.png",
-        "ornement2": "./images/carrousel_home/ornement_8.png"
+        "ornement2": "./images/carrousel_home/ornement_8.png",
+        "link": "./Prestations",
+        "element": "<PrestationsPro />"
     }
    
 ]

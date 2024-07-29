@@ -9,6 +9,8 @@ import Login from './pages/Connexion';
 import Propos from './pages/Propos';
 import SignUp from './pages/Creation';
 import Inspirations from './pages/Inspirations';
+import PrestationsPro from './pages/Presta-pro';
+import PrestationId from './pages/PrestationId';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Propos" element={<Propos />} />
           <Route path="/Prestations" element= {<Prestations />} />
+          <Route path="/Prestations1" element={<PrestationsPro />} />
+          <Route path="/PrestationId/:id" element={<PrestationId />} />
           <Route path="/Projets" element={<Projets/>} />
           <Route path='/Inspirations' element={<Inspirations />} />
           <Route path="/Avis" element={<Avis />} />
