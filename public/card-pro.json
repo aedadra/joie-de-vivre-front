@@ -1,20 +1,20 @@
 [
     {
-        "id":7,
+        "id": "7",
         "title": "Rénovation/aménagement de votre boutique...",
         "image": "./images/presta_pro/ImageFichier_80.png",
         "promoImage": "./images/promo/PastilleFichier_61.png",
         "price":"150€ HT/m2"
     },
     {
-        "id":8,
+        "id": "8",
         "title": "Rénovation/aménagement de votre restaurant...",
         "image": "./images/presta_pro/ImageFichier_81.png",
         "promoImage": "./images/promo/PastilleFichier_61.png",
         "price": "200€ HT/m2"
     },
     {
-        "id":9,
+        "id": "9",
         "title": "Rénovation/aménagement de vos bureaux...",
         "image": "./images/presta_pro/ImageFichier_82.png",
         "promoImage": "./images/promo/PastilleFichier_62.png",

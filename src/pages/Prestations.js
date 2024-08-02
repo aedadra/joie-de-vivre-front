@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import"../styles/prestation.scss"
 import tache2 from "../images/ornement/tâcheFichier_54.png"
 import tache from "../images/ornement/tâcheFichier_53.png"
-import Card2 from '../components/card-2';
+
 
 function Prestations() {
 
@@ -47,7 +47,7 @@ function Prestations() {
             <div class="prestation_align-margin">
                 {prestation2.map((prestation, id) =>
                     <div key={id} class="prestation_card">
-                        <Card2 id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} />
+                        <Card id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} />
                     </div>
                 )}
             </div>

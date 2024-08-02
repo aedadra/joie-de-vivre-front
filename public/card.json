@@ -1,20 +1,20 @@
 [
     {
-        "id":1,
+        "id": "1",
         "title": "Rénovation/ aménagement de votre appartment...",
         "image": "./images/presta_particulier/ImageFichier_64.png",
         "promoImage": "./images/promo/PastilleFichier_61.png",
         "price": "300€ TTC/m²"
     },
     {
-        "id":2,
+        "id": "2",
         "title": "Rénovation/ aménagement de votre maison...",
         "image":"./images/presta_particulier/ImageFichier_65.png",
         "promoImage": "./images/promo/PastilleFichier_61.png",
         "price": "200€ TTC/m²"
     },
     {
-        "id":3,
+        "id": "3",
         "title": "Pour vos pièces inferieurs à 30m²...",
         "image":"./images/presta_particulier/ImageFichier_66.png",
         "promoImage": "./images/promo/PastilleFichier_62.png",
