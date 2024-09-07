@@ -21,19 +21,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        width: 100%;
         margin-left: 40px;
     }
     &_align-margin{ 
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        width: 100%;
+
         margin-top: 40px;
-        margin-left: 200px;
+        padding-left: 200px;
     }
     &_card {
-        width: 24%;
+        width: 26%;
         position: relative;
     }
     &_option-align {
@@ -42,6 +38,8 @@
     &_tache2-container {
         position: relative;
         width: 30%;
+        display: flex;
+        align-items: flex-end;
     }
     &_tache2 {
         position: absolute;
@@ -52,7 +50,7 @@
     }
     &_option {
         width: 65%;
-        margin-top: 100px;
+        margin-top: 20px;
     }
     &_option-title {
         font-family: Amatic SC;
@@ -65,4 +63,23 @@
         font-size: 1.2em;
     }
 
+}
+a, .prestation_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestation_Button {
+font-family: "Tsukimi rounded";
+font-size: 1.2em;
+font-weight: bold;
+text-decoration: none;
+border-color: #edb964;
+border-radius: 2em;
+padding: 15px;
+border-style: solid;
+border-width: 2px;
+color: #edb964;
+margin-top: 30px;
 }

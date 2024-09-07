@@ -25,7 +25,7 @@
         "description3": "Laissez-vous tenter !",
         "promotion": "./images/carrousel_home/carrousel_reduction.png",
         "ornement2": "./images/carrousel_home/ornement_8.png",
-        "link": "./Prestations1",
+        "link": "./PrestationsPro",
         "element": "<PrestationsPro />"
     }
    

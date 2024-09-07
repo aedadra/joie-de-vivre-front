@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import"../styles/prestation.scss"
 import tache2 from "../images/ornement/tâcheFichier_54.png"
 import tache from "../images/ornement/tâcheFichier_53.png"
+import {NavLink} from 'react-router-dom';
 
 
 function Prestations() {
@@ -45,11 +46,13 @@ function Prestations() {
                 )}
             </div>
             <div class="prestation_align-margin">
+            <div class="prestation_align">
                 {prestation2.map((prestation, id) =>
                     <div key={id} class="prestation_card">
-                        <Card id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} />
+                        <Card id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} style={"margin-left:200px"} />
                     </div>
                 )}
+                </div>
             </div>
             <div class="prestation_option-align">
                 <div class="prestation_tache2-container">
@@ -70,6 +73,13 @@ function Prestations() {
                         <br></br>
                         <li>Suivi de chantier + proposition d’artisans ........................................................................ Sur devis</li>
                     </ul>
+                    <div>
+                        <NavLink to="/PrestationsPro" class="prestation_button">
+                            <button class="prestation_Button">
+                                Les proffessionnels
+                            </button>
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </div>

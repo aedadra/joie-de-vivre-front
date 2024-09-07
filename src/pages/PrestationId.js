@@ -1,9 +1,10 @@
 import { useState } from "react";
-
+import tache from "../images/ornement/tâcheFichier_53.png";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../styles/prestationId.scss"
+import tache2 from "../images/ornement/tâcheFichier_54.png"
 
 function PrestationId() {
 
@@ -49,27 +50,35 @@ function PrestationId() {
 			.catch((error) => console.log(error))
 	}, [params, navigate])
 
-
-
-
-    return (
-        <div className="presta-page" key={params.id}  >
-            {PrestaId &&
-                <div>
-                    <div className="logement-page__text">
-                        <h1 className="logement-page__title">{PrestaId.title}</h1>
-                    </div>
-					
+	return (
+		<div className="presta-page" key={params.id}  >
+			{PrestaId &&
 				<div>
-					<img class="presta_img" src={PrestaId.image} alt="cover de la prestation"/>
+					<div class="prestation_tache-container">
+						<img src={tache} alt='tache avec une fleur' class="prestation_tache" />
 					</div>
-					
-						<p class="presta_description">{PrestaId.price}</p>
-						<img class="presta_promo" src={PrestaId.promoImage} alt="promo" />
-                </div>
-            }
-        </div>        
-    )
+					<div className="presta_text">
+						<h1 className="presta_title">{PrestaId.title}</h1>
+					</div>
+					<div class="presta_img">
+						<img src={PrestaId.image} alt="cover de la prestation" />
+					</div>
+					<div class="prestation_option-align">
+						<div class="prestation_tache2-container">
+							<img src={tache2} alt="tache avec une fleur" class="prestation_tache2" />
+						</div>
+						<div class="presta_price">
+							<p class="presta_description">Prix : {PrestaId.price}</p>
+							<div class="presta_launch">
+								<p>Offre de lancement :</p>
+								<img class="presta_promo" src={PrestaId.promoImage} alt="promo" />
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	)
 }   
 
 export default PrestationId

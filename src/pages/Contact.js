@@ -3,6 +3,7 @@ import map from "../images/CarteFichier_40.png"
 import tache3 from "../images/ornement/TacheFichier_42.png"
 import tache from "../images/ornement/TacheFichier_45.png"
 import tache2 from "../images/ornement/TacheFichier_44.png"
+import { NavLink } from "react-router-dom"
 
 function Contact() {
 
@@ -59,7 +60,16 @@ function Contact() {
 				<p>Déplacement dans tout le Finistère. <br></br>Prise de rendez-vous par téléphone ou sur le site <br></br> internet.</p>
 				</div>
 			</div>
-			<img src={tache2} class="contact_tache2" alt="tache avec une fleur" />
+			<div class="formulaire">
+				<div class="contact_projet">
+				<h3>Vous avez un projet ?</h3>
+				<p>Venez nous en parler</p>
+				<NavLink to="/Formulaire">
+					<button class="contact_button">Juste ici</button>
+				</NavLink>
+				</div>
+				<img src={tache2} class="contact_tache2" alt="tache avec une fleur" />
+			</div>
 		</div>
 	)
 }

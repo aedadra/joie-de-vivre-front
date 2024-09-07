@@ -11,6 +11,8 @@
 
     &_title {
         text-align: center;
+        font-family: "Tsukimi rounded";
+        font-size: 1.2em;
     }
     &_photos {
         display: flex;
@@ -35,10 +37,17 @@
     }
     &_price {
         text-align: center;
+        font-family: "Tsukimi rounded";
     }
     &_button {
         color: #edb964;
         border: solid 2px #edb964;
         background-color: white;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-family: Amatic SC;
+        font-size: 1.3em;
+        font-weight: 800;
+        
     }
 }

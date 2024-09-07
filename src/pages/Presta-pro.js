@@ -4,7 +4,7 @@ import"../styles/prestation.scss"
 import tache2 from "../images/ornement/tâcheFichier_54.png"
 import tache from "../images/ornement/tâcheFichier_53.png"
 import Card2 from '../components/card-2';
-
+import {NavLink} from 'react-router-dom';
 
 function PrestationsPro() {
 
@@ -45,11 +45,13 @@ function PrestationsPro() {
                 )}
             </div>
             <div class="prestation_align-margin">
+            <div class="prestation_align">
                 {prestation2.map((prestation, id) =>
                     <div key={id} class="prestation_card">
-                        <Card2 id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} />
+                        <Card id={prestation.id} image={prestation.image} title={prestation.title} promoImage={prestation.promoImage} price={prestation.price} style={"margin-left:200px"}/>
                     </div>
                 )}
+                </div>
             </div>
             <div class="prestation_option-align">
                 <div class="prestation_tache2-container">
@@ -60,7 +62,7 @@ function PrestationsPro() {
                     <ul class="prestation_option-text">
                         <li>Visite 3D de votre projet ................................................................................................... à partir de 300€</li>
                         <br></br>
-                        <li>Design de meubles sur-mesure (bureau, bibliothèque,...) ......................... à partir de 100€</li>
+                        <li>Design de meubles sur-mesure (bureau, bibliothèque,...) ............................................. à partir de 100€</li>
                         <br></br>
                         <li>Shopping liste avec accompagnement dans les achats .................................................... à partir de 250€</li>
                         <br></br>
@@ -70,8 +72,16 @@ function PrestationsPro() {
                         <br></br>
                         <li>Suivi de chantier + proposition d’artisans ........................................................................ Sur devis</li>
                     </ul>
+                    <div>
+                <NavLink to="/Prestations" class="prestation_button">
+                    <button class="prestation_Button">
+                        Les particuliers
+                    </button>
+                </NavLink>
+            </div>
                 </div>
             </div>
+            
         </div>
     
     );

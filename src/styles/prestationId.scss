@@ -1,0 +1,62 @@
+.prestation_tache-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.prestation_tache {
+    position: absolute;
+    width: 25%;
+    object-fit: cover;
+}
+.presta_title {
+    text-align: center;
+    font-family:  Amatic SC;
+    font-size: 3em;
+    margin-bottom: 70px;
+    margin-right: 250px;
+}
+.presta_img {
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presta_img img {
+    width: 40%;
+    margin-left: 150px;
+}
+.presta_price {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Amatic SC;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.presta_launch {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.presta_promo {
+    width: 25%;
+    object-fit: contain;
+}
+.prestation_option-align {
+    display: flex;
+}
+.prestation_tache2-container {
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+}
+.prestation_tache2 {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -400px;
+    z-index: -1;
+}
